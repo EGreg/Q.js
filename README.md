@@ -36,19 +36,19 @@ String.prototype.htmlentities - encode HTML entities
 etc.
 
 To use Q.js, simply include it in your page. It has a lot of helpful Javascript functions, and works well with other libraries such as jQuery and Cordova/Phonegap.
-
+    
 
 Minimal example if you want to use Q.js as a front-end framework:
 =================================================================
-Q.setObject({
-	"Q.info.url": "http://example.com/MyApp/foo.html", // current url
-	"Q.info.baseUrl": "http://example.com/MyApp", // base url of your app
-	"Q.info.socketUrl": "http://example.com:3001", // if you have socket.io
-	"Q.info.uri": {"module":"Example","action":"welcome"},
-	"Q.info.uriString": "Example/welcome", 
-	"Q.info.sessionName": "session_id", // name of session cookie
-	"Q.info.slotNames": ["content","dashboard","title","notices"], // slots on the page
-	"Q.app": "Example"
-});
+    Q.setObject({
+        "Q.info.url": "http://example.com/MyApp/foo.html", // current url
+        "Q.info.baseUrl": "http://example.com/MyApp", // base url of your app
+        "Q.info.socketUrl": "http://example.com:3001", // if you have socket.io
+        "Q.info.uri": {"module":"Example","action":"welcome"},
+        "Q.info.uriString": "Example/welcome", 
+        "Q.info.sessionName": "session_id", // name of session cookie
+        "Q.info.slotNames": ["content","dashboard","title","notices"], // slots on the page
+        "Q.app": "Example"
+    });
 Q.handle.loadUsingAjax = true; // turns your app into an AJAX app automatically!
 Q.init();
