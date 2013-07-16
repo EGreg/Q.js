@@ -50,5 +50,5 @@ Minimal example if you want to use Q.js as a front-end framework:
         "Q.info.slotNames": ["content","dashboard","title","notices"], // slots on the page
         "Q.app": "Example"
     });
-Q.handle.loadUsingAjax = true; // turns your app into an AJAX app automatically!
-Q.init();
+    Q.handle.loadUsingAjax = true; // turns your app into an AJAX app automatically!
+    Q.init();
